@@ -1,0 +1,29 @@
+<html>
+<head>
+<title>Hello World
+</title>
+</head>
+<body>
+<form id="form1">
+firstname:<input type="text" name=fname value="Roopa">
+<input type="submit" value="Submit" onclick=" return validate()>
+</form>
+<p id="demo"></p>
+<a href="file:///C:/Users/Roopa/Desktop/sample.html">click it</a>
+<script>
+const x=document.forms["form1"];
+let text="";
+for(let i=0;i<x.length;i++){
+text+=x.elements[i].value+"<br>";
+}
+//document.getElementById("demo").innerHTML=text;
+
+function validate(){
+let x=document.forms["form1"]["fname"].value;
+if(x==""){
+alert("please fill the name");
+return false;}}
+
+</script>
+</body>
+</html>
